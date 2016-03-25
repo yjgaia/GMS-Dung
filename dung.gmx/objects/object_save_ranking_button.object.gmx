@@ -58,7 +58,7 @@ is_already = false;
 
 if (is_already != true) {
     
-    var name = get_string('이름을 입력하시오. (영문)', '');
+    var name = get_string('이름을 입력하시게... (영문)', '');
     
     if (name != '') {
     
@@ -103,6 +103,8 @@ if (ds_map_find_value(async_load, 'id') == save_ranking) {
         }
         
         title = '저장됨!';
+        
+        show_message('당신의 랭킹은 ' + ds_map_find_value(async_load, 'result') + '등 이라네.');
     }
 }
 </string>
