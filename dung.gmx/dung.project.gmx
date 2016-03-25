@@ -19,6 +19,7 @@
     <sprite>sprites\sprite_man_down</sprite>
     <sprite>sprites\sprite_start_button</sprite>
     <sprite>sprites\sprite_title</sprite>
+    <sprite>sprites\sprite_save_ranking_button</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background_game</background>
@@ -37,6 +38,8 @@
     <object>objects\object_start_button</object>
     <object>objects\object_man</object>
     <object>objects\object_dung</object>
+    <object>objects\object_ranking</object>
+    <object>objects\object_save_ranking_button</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_main</room>
