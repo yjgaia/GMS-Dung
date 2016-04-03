@@ -57,12 +57,14 @@ is_already = false;
             <string>/// save ranking
 
 if (is_already != true) {
+
+    var secure_key = 'Ehd';
     
     var name = get_string('이름을 입력하시게... (영문)', '');
     
     if (name != '') {
     
-        save_ranking = http_post_string('http://plasma.pe.hu/dung/plasma-game-api/ranking/save.php', 'name=' + name + '&amp;point=' + string(object_game_controller.point));
+        save_ranking = http_post_string('http://plasma.pe.hu/dung/plasma-game-api/ranking/save.php', 'name=' + name + '&amp;point=' + string(object_game_controller.point) + '&amp;key=' + sha1_string_utf8(secure_key + name + string(object_game_controller.point)));
         
         title = '저장중...';
     
@@ -104,7 +106,12 @@ if (ds_map_find_value(async_load, 'id') == save_ranking) {
         
         title = '저장됨!';
         
-        show_message('당신의 랭킹은 ' + ds_map_find_value(async_load, 'result') + '등 이라네.');
+        var ranking = real(ds_map_find_value(async_load, 'result'));
+        if (ranking == -1) {
+            show_message('오류가 발생했다네.');
+        } else {
+            show_message('당신의 랭킹은 ' + string(ranking) + '등 이라네.');
+        }
     }
 }
 </string>
