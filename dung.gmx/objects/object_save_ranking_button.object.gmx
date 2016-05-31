@@ -64,7 +64,7 @@ if (is_already != true) {
     
     if (name != '') {
     
-        save_ranking = http_post_string('http://plasma.pe.hu/dung/plasma-game-api/ranking/save.php', 'name=' + name + '&amp;point=' + string(object_game_controller.point) + '&amp;key=' + sha1_string_utf8(secure_key + name + string(object_game_controller.point)));
+        save_ranking = http_post_string('http://plasma.pe.hu/dung/plasma-game-api/ranking/save.php', 'name=' + name + '&amp;point=' + string(object_game_controller.point) + '&amp;key=' + sha1_string_utf8(secure_key + name));
         
         title = '저장중...';
     
