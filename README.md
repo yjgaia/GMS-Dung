@@ -2,7 +2,7 @@
 GameMaker: Studio로 개발한 똥피하기 게임
 
 ## Screenshot
-![Screenshot](screenshot.png)
+![Screenshot](dung.png)
 
 ## License
 [MIT](LICENSE)
