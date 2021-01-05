@@ -1,0 +1,125 @@
+Converting GML script: ${project_dir}\scripts\dung_start_game\dung_start_game.gml
+Converted description /// @description  dung_start_game();
+
+!!! Font font_default font family 굴림 is installed but couldn't match style - Font has NOT been regenerated
+GameMaker Studio 1 font texture has been backed up at ${project_dir}\fonts\font_default\font_default.gms1.png
+Converting GML script: ${project_dir}\objects\object_global\Create_0.gml
+Converted description /// @description  game init
+
+Converting GML script: ${project_dir}\objects\object_game_controller\Create_0.gml
+Converted description /// @description  set level
+
+Converting GML script: ${project_dir}\objects\object_game_controller\Alarm_1.gml
+Converted description /// @description  decrease interval
+
+Converting GML script: ${project_dir}\objects\object_game_controller\Alarm_0.gml
+Converted description /// @description  dung 생성
+
+Converting GML script: ${project_dir}\objects\object_game_controller\Draw_0.gml
+Converted description /// @description  draw point
+Converted string - line 7: '점수: ' -> "점수: "
+
+Converting GML script: ${project_dir}\objects\object_title\Draw_0.gml
+Converted description /// @description  draw_self();
+Converted string - line 11: '제작: 심영재' -> "제작: 심영재"
+
+Converting GML script: ${project_dir}\objects\object_start_button\Mouse_4.gml
+Converted description /// @description  start game
+
+Converting GML script: ${project_dir}\objects\object_start_button\KeyPress_32.gml
+Converted description /// @description  start game
+
+Converting GML script: ${project_dir}\objects\object_start_button\KeyPress_13.gml
+Converted description /// @description  start game
+
+Converting GML script: ${project_dir}\objects\object_man\Create_0.gml
+Converted description /// @description  init
+
+Converting GML script: ${project_dir}\objects\object_man\Step_0.gml
+Converted description /// @description  check collision
+
+Converting GML script: ${project_dir}\objects\object_man\Mouse_56.gml
+Converted description /// @description  hspeed = 0;
+
+Converting GML script: ${project_dir}\objects\object_man\Mouse_53.gml
+Converted description /// @description  move
+
+Converting GML script: ${project_dir}\objects\object_man\KeyPress_39.gml
+Converted description /// @description  move to right
+
+Converting GML script: ${project_dir}\objects\object_man\KeyPress_37.gml
+Converted description /// @description  move to left
+
+Converting GML script: ${project_dir}\objects\object_man\KeyRelease_39.gml
+Converted description /// @description  hspeed = 0;
+
+Converting GML script: ${project_dir}\objects\object_man\KeyRelease_37.gml
+Converted description /// @description  hspeed = 0;
+
+Converting GML script: ${project_dir}\objects\object_dung\Create_0.gml
+Converted description /// @description  init
+
+Converting GML script: ${project_dir}\objects\object_dung\Step_0.gml
+Converted description /// @description  drop
+
+Converting GML script: ${project_dir}\objects\object_ranking\Create_0.gml
+Converted description /// @description  load ranking
+Converted string - line 5: 'http://plasma.pe.hu/dung/plasma-game-api/ranking/list.php?count=6' -> "http://plasma.pe.hu/dung/plasma-game-api/ranking/list.php?count=6"
+
+Converting GML script: ${project_dir}\objects\object_ranking\Other_62.gml
+Converted description /// @description  loaded ranking
+Converted string - line 3: 'id' -> "id"
+Converted string - line 5: 'status' -> "status"
+Converted string - line 11: 'result' -> "result"
+Converted string - line 11: 'list' -> "list"
+
+Converting GML script: ${project_dir}\objects\object_ranking\Draw_0.gml
+Converted description /// @description  draw text
+Converted string - line 9: '랭킹 로딩중...' -> "랭킹 로딩중..."
+Converted string - line 22: '등: ' -> "등: "
+Converted string - line 22: 'name' -> "name"
+Converted string - line 22: ' 점수: ' -> " 점수: "
+Converted string - line 22: 'point' -> "point"
+
+Converting GML script: ${project_dir}\objects\object_save_ranking_button\Create_0.gml
+Converted description /// @description  init
+Converted string - line 3: '랭킹 등록' -> "랭킹 등록"
+
+Converting GML script: ${project_dir}\objects\object_save_ranking_button\Mouse_4.gml
+Converted description /// @description  save ranking
+Converted string - line 5: 'Ehd' -> "Ehd"
+Converted string - line 7: '이름을 입력하시게... (영문)' -> "이름을 입력하시게... (영문)"
+Converted string - line 7: '' -> ""
+Converted string - line 9: '' -> ""
+Converted string - line 11: 'http://plasma.pe.hu/dung/plasma-game-api/ranking/save.php' -> "http://plasma.pe.hu/dung/plasma-game-api/ranking/save.php"
+Converted string - line 11: 'name=' -> "name="
+Converted string - line 11: '&point=' -> "&point="
+Converted string - line 11: '&key=' -> "&key="
+Converted string - line 13: '저장중...' -> "저장중..."
+
+Converting GML script: ${project_dir}\objects\object_save_ranking_button\Other_62.gml
+Converted description /// @description  saved ranking
+Converted string - line 3: 'id' -> "id"
+Converted string - line 5: 'status' -> "status"
+Converted string - line 9: 'http://plasma.pe.hu/dung/plasma-game-api/ranking/list.php?count=6' -> "http://plasma.pe.hu/dung/plasma-game-api/ranking/list.php?count=6"
+Converted string - line 12: '저장됨!' -> "저장됨!"
+Converted string - line 14: 'result' -> "result"
+Converted string - line 16: '오류가 발생했다네.' -> "오류가 발생했다네."
+Converted string - line 18: '당신의 랭킹은 ' -> "당신의 랭킹은 "
+Converted string - line 18: '등 이라네.' -> "등 이라네."
+
+Converting GML script: ${project_dir}\objects\object_save_ranking_button\Draw_0.gml
+Converted description /// @description  draw_self();
+
+macOS icon ${options_dir}\mac\icons\icon512.png written out as 32-bit
+Windows NSIS Installer Script has been set to default due to changes in GameMaker Studio 2
+Missing audiogroup for sound: 'sound_start_game' - setting to default audio group
+Missing audiogroup for sound: 'sound_drop_dung_1' - setting to default audio group
+Missing audiogroup for sound: 'sound_drop_dung_2' - setting to default audio group
+Missing audiogroup for sound: 'sound_drop_dung_3' - setting to default audio group
+Missing audiogroup for sound: 'sound_game_over' - setting to default audio group
+Missing audiogroup for sound: 'bgm' - setting to default audio group
+Game speed set to 30
+Added compatibility script 'instance/instance_create.gml'
+Added compatibility script 'object/object_get_depth.gml'
+Added compatibility script '__global_object_depths.gml'
